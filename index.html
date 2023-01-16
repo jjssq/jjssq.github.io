@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Color Picker</title>
+    <script>
+        function printColor(color) {
+            document.getElementById("color-input").value += color + " ";
+        }
+
+        
+    </script>
+    <script src="logic.js"></script>
+</head>
+
+<body>
+    <div>
+        <button onclick="printColor('red')">Red</button>
+        <button onclick="printColor('green')">Green</button>
+        <button onclick="printColor('blue')">Blue</button>
+        <button onclick="printColor('yellow')">Yellow</button>
+        <button onclick="printColor('cyan')">Cyan</button>
+        <button onclick="printColor('magenta')">Magenta</button>
+        <button onclick="printColor('white')">White</button>
+        <button onclick="printColor('gray')">Gray</button>
+        <button onclick="printColor('black')">Black</button>
+    </div>
+    <br>
+    <div>
+        <textarea id="color-input" rows = "5" cols = "60" name = "description"></textarea><br>
+    </div>
+    <br>
+    <div>
+        <button onclick="decodeHex()">Decode hexahue</button>
+    </div>
+    <br>
+    <div id="decoded-colors"></div>
+</body>
+
+</html>
